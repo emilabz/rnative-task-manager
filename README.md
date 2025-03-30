@@ -1,5 +1,3 @@
-Okay, here's a comprehensive README.md file that includes setup instructions for your React Native Task Manager app, covering both local development and deployment to Render. It also incorporates instructions for using expo-dev-client to create shareable development builds.
-
 # React Native Task Manager App
 
 ## Description
@@ -29,7 +27,7 @@ A simple task management app built with React Native (Expo), Node.js, Express, a
 git clone YOUR_GITHUB_REPOSITORY_URL
 cd react-native-task-manager  # Change to your repository name
 
-2. Configure the Backend
+### 2. Configure the Backend
 
 Navigate to the backend directory:
 
@@ -50,7 +48,7 @@ Replace YOUR_MONGODB_CONNECTION_STRING with your MongoDB connection string (e.g.
 
 Replace YOUR_JWT_SECRET_KEY with a strong, random secret key.
 
-3. Deploy the Backend to Render
+### 3. Deploy the Backend to Render
 
 Create a Render account at https://render.com/.
 
@@ -66,7 +64,7 @@ JWT_SECRET: Your JWT secret key
 
 Once deployed, note the Render app URL (e.g., https://taskmanager-backend-xxxxxxxx.onrender.com).
 
-4. Configure the Frontend
+### 4. Configure the Frontend
 
 Navigate to the frontend directory:
 
@@ -81,7 +79,7 @@ Update the baseURL in utils/api.js with your Render app URL:
 // frontend/utils/api.js
 const baseURL = 'https://taskmanager-backend-xxxxxxxx.onrender.com'; // Replace with your Render URL
 
-5. Local Development (Using Expo Go)
+### 5. Local Development (Using Expo Go)
 
 Start the Expo development server:
 
@@ -92,14 +90,14 @@ Run the app on your Android or iOS device using the Expo Go app.
 The app requires the correct back-end endpoint to be provided to run correctly
 
 
-API Endpoints
+### API Endpoints
 Authentication (JWT-based)
 
 POST /auth/signup → Register a new user
 
 POST /auth/login → Authenticate user and return JWT
 
-Task Management (CRUD operations) (Protected Routes - Requires JWT)
+### Task Management (CRUD operations) (Protected Routes - Requires JWT)
 
 POST /tasks → Create a new task
 
@@ -111,7 +109,7 @@ PUT /tasks/:id → Update a task
 
 DELETE /tasks/:id → Delete a task
 
-Additional Notes
+### Additional Notes
 
 This app uses JWT for authentication.
 
