@@ -2,7 +2,7 @@
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const baseURL = "URL"; // Replace with your backend URL
+const baseURL = "https://rnative-task-manager-backend.onrender.com"; // Replace with your backend URL
 
 const api = axios.create({
   baseURL: baseURL,
