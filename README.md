@@ -11,7 +11,6 @@ A simple task management app built with React Native (Expo), Node.js, Express, a
 *   Task management (CRUD operations)
 *   Pull-to-refresh functionality
 *   Responsive UI
-*   Shareable development builds using `expo-dev-client`
 
 ## Technologies Used
 
@@ -25,7 +24,7 @@ A simple task management app built with React Native (Expo), Node.js, Express, a
 ### 1. Clone the Repository
 
 git clone YOUR_GITHUB_REPOSITORY_URL
-cd react-native-task-manager  # Change to your repository name
+cd REPOSITORY_NAME  # Change to your repository name
 
 ### 2. Configure the Backend
 
